@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>個人作品集範例</title>
+  <style>
+    body {
+      font-family: '微軟正黑體', sans-serif;
+      margin: 0; padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #357abd;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #2a5c9e;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 3px solid #4a90e2;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .about, .projects {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    }
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .project-item {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fafafa;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.05);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+    }
+    .project-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .project-info {
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #357abd;
+      color: white;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>反派數小的個人作品集</header>
+  <nav>
+    <a href="#about">關於我</a>
+    <a href="#projects">作品展示</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>關於我</h2>
+    <p>哈囉，我是反派數小大人，熱愛數學與程式設計！這是我的個人網站範例，未來會陸續放上我的作品和學習筆記。</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>作品展示</h2>
+    <div class="projects-list">
+      <div class="project-item" onclick="alert('這是第一個作品的簡介喔！')">
+        <img src="https://picsum.photos/300/150?random=1" alt="作品1" class="project-img" />
+        <div class="project-info">
+          <h3>數學遊戲小程式</h3>
+          <p>一個用 JavaScript 做的趣味數學遊戲，訓練心算速度。</p>
+        </div>
+      </div>
+      <div class="project-item" onclick="alert('這是第二個作品的簡介喔！')">
+        <img src="https://picsum.photos/300/150?random=2" alt="作品2" class="project-img" />
+        <div class="project-info">
+          <h3>個人部落格設計</h3>
+          <p>用純 HTML/CSS 做的簡易個人網誌版型，適合分享生活點滴。</p>
+        </div>
+      </div>
+      <div class="project-item" onclick="alert('這是第三個作品的簡介喔！')">
+        <img src="https://picsum.photos/300/150?random=3" alt="作品3" class="project-img" />
+        <div class="project-info">
+          <h3>學習筆記整理網站</h3>
+          <p>整理數學和程式設計筆記，讓學習更有條理。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 反派數小大人 版權所有
+  </footer>
+
+</body>
+</html>
